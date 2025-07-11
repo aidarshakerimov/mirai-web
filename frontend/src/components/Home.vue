@@ -21,21 +21,22 @@
 </template>
 
 <script setup>
-import Hero from '@/components/Hero.vue';
-import ProblemSlider from '@/components/ProblemSlider.vue';
-import TechFeatures from '@/components/TechFeatures.vue';
-import TechFeatureHelps from '@/components/TechFeatureHelps.vue';
-import HowItWorks from '@/components/HowItWorks.vue';
-import MetricsCarousel from '@/components/MetricsCarousel.vue';
-import ApplicationCards from '@/components/ApplicationCards.vue';
-import PublicationsList from '@/components/PublicationsList.vue';
-import VideoCarousel from '@/components/VideoCarousel.vue';
-import NewsList from '@/components/NewsList.vue';
-import Testimonials from '@/components/Testimonials.vue';
-import Partners from '@/components/Partners.vue';
-import MadeInKZ from '@/components/MadeInKZ.vue';
-import Events from '@/components/Events.vue';
-import PreOrderNow from '@/components/PreOrderNow.vue';
+// Use relative imports for GitHub Pages deployment
+import Hero from './Hero.vue';
+import ProblemSlider from './ProblemSlider.vue';
+import TechFeatures from './TechFeatures.vue';
+import TechFeatureHelps from './TechFeatureHelps.vue';
+import HowItWorks from './HowItWorks.vue';
+import MetricsCarousel from './MetricsCarousel.vue';
+import ApplicationCards from './ApplicationCards.vue';
+import PublicationsList from './PublicationsList.vue';
+import VideoCarousel from './VideoCarousel.vue';
+import NewsList from './NewsList.vue';
+import Testimonials from './Testimonials.vue';
+import Partners from './Partners.vue';
+import MadeInKZ from './MadeInKZ.vue';
+import Events from './Events.vue';
+import PreOrderNow from './PreOrderNow.vue';
 </script>
 
 <style scoped>
