@@ -39,6 +39,7 @@ import Events from './Events.vue';
 import PreOrderNow from './PreOrderNow.vue';
 </script>
 
+
 <style scoped>
 /* Optional layout and padding styles */
 </style>
