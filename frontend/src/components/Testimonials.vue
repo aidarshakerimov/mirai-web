@@ -1,6 +1,7 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
   <section class="testimonials-section" id="testimonials">
+    <h2 class="title">{{ t('testimonials-title') }}</h2>
     <div class="testimonial-scroll-wrapper">
       <div class="testimonial-grid">
         <div v-for="(testimonial, index) in testimonials" :key="index" class="testimonial-card">
@@ -52,6 +53,17 @@ const testimonials = [
 </script>
 
 <style scoped>
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 2rem;
+  color: #ffffff;
+  position: relative;
+  display: block;
+  text-align: center;
+}
+
 .testimonials-section {
   padding: 2rem;
   overflow-x: auto;

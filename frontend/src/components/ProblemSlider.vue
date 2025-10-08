@@ -87,4 +87,5 @@ const problems = [
   object-fit: cover;
   display: block;
 }
+
 </style>

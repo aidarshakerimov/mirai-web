@@ -4,7 +4,7 @@
     <div class="hero-text">
       <span class="mini-title">{{ t('hero-mini-title') }}</span>
       <h1 class="hero-title">
-        {{ t('hero-title-1') }} <em>{{ t('hero-title-2') }}</em>
+        {{ t('hero-title-1') }} 
       </h1>
       <p class="hero-subtitle">
         {{ t('hero-subtitle') }}
@@ -88,11 +88,28 @@ const t = langStore.t
 }
 @media (max-width: 768px) {
   .hero {
-    flex-direction: column;
+    padding: 80px 20px;
     text-align: center;
+    justify-content: center;
   }
-  .hero-logo {
-    margin-top: 2rem;
+
+  .hero-text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .hero-logo img.glow-image {
+    max-width: 280px;
   }
 }
 </style>

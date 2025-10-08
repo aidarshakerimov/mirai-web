@@ -2,10 +2,12 @@
   <section class="publications-list" id="publications">
     <h2 class="title">{{ t('our-publications') }}</h2>
     <div class="cards">
-      <div
+      <a
         v-for="(pub, index) in publications"
         :key="index"
         class="card"
+        :href="pub.link"
+        target="_blank"
         @mouseover="hovered = index"
         @mouseleave="hovered = null"
         :class="{ active: hovered === index }"
@@ -13,8 +15,8 @@
         <p class="year">{{ pub.year }}</p>
         <p class="source">{{ pub.source }}</p>
         <h3 class="headline">{{ pub.title }}</h3>
-        <a class="link" :href="pub.link" target="_blank">{{ t('read-more') }} →</a>
-      </div>
+        <span class="link">{{ t('read-more') }} →</span>
+      </a>
     </div>
   </section>
 </template>
@@ -70,7 +72,7 @@ const publications = [
 .title {
   font-size: 2.5rem;
   font-weight: 800;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   color: #ffffff;
   position: relative;
   display: inline-block;
@@ -93,6 +95,9 @@ const publications = [
   max-width: 300px;
   transition: transform 0.3s, box-shadow 0.3s;
   cursor: pointer;
+  display: block;
+  text-decoration: none;
+  color: inherit;
 }
 .card.active {
   transform: translateY(-10px);

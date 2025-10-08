@@ -13,36 +13,33 @@ import Footer from './components/Footer.vue';
 
 <style>
 /* Add to your main global CSS file or layout wrapper */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 body {
   margin: 0;
   padding: 0;
-  background: #0b102a; /* or your desired full background */
-  overflow-x: hidden; /* prevents horizontal scroll */
+  background: #0b102a;
+  overflow-x: hidden;
+  width: 100%;
+  min-height: 100vh;
 }
 
-/* Optional: override container or layout padding */
-.container,
-.tech-container,
-.footer-wrapper,
-.preorder-container,
-.navbar-container {
-  max-width: 1440px;
-  margin: 0 auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
+#app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
 }
 
 /* Remove extra section padding if present */
 section {
   padding-left: 0;
   padding-right: 0;
-}
-
-/* Optional fix for dark side gutters */
-html, body {
   width: 100%;
-  scroll-behavior: smooth;
 }
-
-
 </style>

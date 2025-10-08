@@ -1,7 +1,5 @@
 // src/router/index.js
-import { createRouter, createWebHistory } from 'vue-router';
-
-// Adjust the path if your Home.vue is somewhere else
+import { createRouter, createWebHistory } from 'vue-router'; // Changed import
 import Home from '../components/Home.vue';
 
 const routes = [
@@ -13,9 +11,8 @@ const routes = [
 ];
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHistory(process.env.BASE_URL), 
   routes,
 });
 
 export default router;
-

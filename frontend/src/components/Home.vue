@@ -1,5 +1,4 @@
 <!-- eslint-disable vue/multi-word-component-names -->
-
 <template>
   <main>
     <Hero />
@@ -41,5 +40,18 @@ import PreOrderNow from './PreOrderNow.vue';
 
 
 <style scoped>
-/* Optional layout and padding styles */
+main {
+  width: 100%;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 120px; /* Adjust based on header height */
+}
+
+@media (max-width: 768px) {
+  main {
+    padding-top: 100px;
+  }
+}
 </style>

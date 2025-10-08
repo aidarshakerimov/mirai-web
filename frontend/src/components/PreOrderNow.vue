@@ -28,7 +28,7 @@
 
         <div v-if="submitted" class="success-popup">
           <div class="success-container">
-            <img src="@/assets/success-icon.png" alt="Success" class="success-icon" />
+            <img src="@/assets/fail-icon.png" alt="Success" class="success-icon" />
             <h3>{{ t('form-success') }}</h3>
             <p>{{ t('form-thanks') }}</p>
           </div>
